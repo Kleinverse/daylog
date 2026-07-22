@@ -35,6 +35,7 @@ const genNavbarLogo = (title, href) => {
 // format of menus' element {title: TITLE, href: URL}
 const genNavbarMenuList = (menus) => {
     const ul = document.createElement('ul');
+    ul.classList.add("uk-navbar-nav");
     for(let i=0; i<menus.length; i++){
         const li = document.createElement('li');
         const a = document.createElement('a');
