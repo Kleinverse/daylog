@@ -1,1 +1,1 @@
-# Official Github Page of daylog
+# Official Github Page
