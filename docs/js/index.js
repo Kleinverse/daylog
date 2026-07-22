@@ -10,12 +10,12 @@ const genNavbar = (subtitle = null) => {
     nav.appendChild(navbar);
     const leftNav = genNavbarPart('left');
     leftNav.appendChild(genNavbarLogo(title, "/"));
-    nav.appendChild(leftNav);
+    navbar.appendChild(leftNav);
     const menus = [{title: "Docs", href: "/documents"}, {title: "FAQs", href: "/faqs"}];
     leftNav.appendChild(genNavbarMenuList(menus));
     const rightNav = genNavbarPart('right');
     rightNav.appendChild(genNavbarIconButton("github", "https://github.com/Kleinverse/kai-line-manager"));
-    nav.appendChild(rightNav);
+    navbar.appendChild(rightNav);
 }
 
 const genNavbarPart = (position) => {
