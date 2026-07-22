@@ -63,7 +63,7 @@ const linkLineOfficialAccount = (element, href = "https://lin.ee/9FDmO82") => {
     a.classList.add("uk-button", "uk-border-rounded", "line-login-button");
     a.href = href;
     const logo = document.createElement('img');
-    logo.src = `https://{location.hostname}/images/line_32.png`;
+    logo.src = `/images/line_32.png`;
     logo.classList.add("line-login-icon");
     const label = document.createElement('span');
     label.innerHTML = "Official Account";
