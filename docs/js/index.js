@@ -10,10 +10,12 @@ const genNavbar = (subtitle = null) => {
     nav.appendChild(navbar);
     const leftNav = genNavbarPart('left');
     leftNav.appendChild(genNavbarLogo(title, "/"));
+    navbar.appendChild(leftNav);
     const menus = [{title: "Docs", href: "/documents"}, {title: "FAQs", href: "/faqs"}];
     leftNav.appendChild(genNavbarMenuList(menus));
     const rightNav = genNavbarPart('right');
-    leftNav.appendChild(genNavbarIconButton("github", "https://github.com/Kleinverse/kai-line-manager"));
+    rightNav.appendChild(genNavbarIconButton("github", "https://github.com/Kleinverse/kai-line-manager"));
+    navbar.appendChild(rightNav);
 }
 
 const genNavbarPart = (position) => {
