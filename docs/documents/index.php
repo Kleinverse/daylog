@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Default CSS -->
     <link rel="stylesheet" href="/css/default.css" />
+    <!-- Index JS -->
+    <script src="/js/index.js"></script>
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@latest/dist/css/uikit.min.css" />
     <!-- UIkit JS -->
@@ -13,31 +15,7 @@
     <title>Official Documents of daylog</title>
 </head>
 <body>
-    <nav class="uk-navbar-container uk-margin">
-        <div class="uk-container uk-container-expand">
-            <div uk-navbar>
-                <div class="uk-navbar-left">
-                    <a class="uk-navbar-item uk-logo uk-text-bold uk-margin-remove" href="#" aria-label="Back to Home">daylog::Docs</a>
-                    
-                    <ul class="uk-navbar-nav">
-                        <li>
-                            <a href="/documents">Docs</a>
-                            <a href="/faqs">FAQs</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-                        <li>
-                            <div class="uk-navbar-item">
-                                <a href="https://github.com/Kleinverse/kai-line-manager" class="uk-icon-button" uk-icon="github"></a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <nav></nav>
     <div class="uk-container">
         <h2 style="uk-flex uk-flex-center uk-text-bold uk-text-muted">
             <img src="/images/daylog-icon-96.png" class="uk-margin-right" style="height: 60px; width: 60px" />
