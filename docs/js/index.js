@@ -1,9 +1,9 @@
 const genNavbar = (subtitle = null) => {
     const title = subtitle ? `daylog::${subtitle}` : "daylog";
     const nav = document.getElementsByTagName('nav')[0];
-    nav.classList.add("uk-navbar-container", "uk-margin");
+    nav.classList.add("uk-navbar-container", "uk-margin", "uk-padding-small-right", "uk-padding-small-left");
     const container = document.createElement('div');
-    container.classList.add("uk-container", "uk-padding-small-left", "uk-padding-small-right");
+    container.classList.add("uk-container", "uk-container-expand");
     nav.appendChild(container);
     const navbar = document.createElement('div');
     navbar.setAttribute('uk-navbar', null);
