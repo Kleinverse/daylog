@@ -1,6 +1,6 @@
 const genNavbar = (subtitle = null) => {
     const title = subtitle ? `<span>daylog</span>::<span class="uk-text-muted">${subtitle}</span>` : "daylog";
-    const nav = document.getElementsByTagName('nav')[0];
+    const nav = document.createElement('nav');
     nav.classList.add("uk-navbar-container", "uk-margin");
     const container = document.createElement('div');
     container.classList.add("uk-container", "uk-container-expand");
@@ -16,6 +16,7 @@ const genNavbar = (subtitle = null) => {
     rightNav.appendChild(genNavbarMenuList(menus));
     rightNav.appendChild(genNavbarIconButton("github", "https://github.com/Kleinverse/kai-line-manager"));
     navbar.appendChild(rightNav);
+    document.write(nav.outerHTML);
 }
 
 const genNavbarPart = (position) => {
