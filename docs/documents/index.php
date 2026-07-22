@@ -16,6 +16,7 @@
 </head>
 <body>
     <nav></nav>
+    <script>genNavbar("docs")</script>
     <div class="uk-container">
         <h2 style="uk-flex uk-flex-center uk-text-bold uk-text-muted">
             <img src="/images/daylog-icon-96.png" class="uk-margin-right" style="height: 60px; width: 60px" />

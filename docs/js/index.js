@@ -1,4 +1,5 @@
-const genNavbar = () => {
+const genNavbar = (subtitle = null) => {
+    const title = subtitle ? `daylog::${subtitle}` : "daylog";
     const nav = document.getElementsByTagName('nav')[0];
     nav.classList.add("uk-navbar-container", "uk-margin");
     const container = document.getElementById('div');
@@ -7,7 +8,12 @@ const genNavbar = () => {
     const navbar = document.createElement('div');
     navbar.setAttribute('uk-navbar', null);
     nav.appendChild(navbar);
-
+    const leftNav = genNavbarPart('left');
+    leftNav.appendChild(genNavbarLogo(title, "/"));
+    const menus = [{title: "Docs", href: "/documents"}, {title: "FAQs", href: "/faqs"}];
+    leftNav.appendChild(genNavbarMenuList(menus));
+    const rightNav = leftNav = genNavbarPart('left');
+    leftNav.appendChild(genNavbarIconButton("github", "https://github.com/Kleinverse/kai-line-manager"));
 }
 
 const genNavbarPart = (position) => {
@@ -36,4 +42,15 @@ const genNavbarMenuList = (menus) => {
         ul.appendChild(li);
     }
     return ul;
+}
+
+const genNavbarIconButton = (icon, href) => {
+    const item = document.createElement('div');
+    item.classList.add("uk-navbar-item");
+    const button = document.createElement('a');
+    button.classList.add('uk-icon-button');
+    button.href = href;
+    button.setAttribute('uk-icon', icon);
+    item.appendChild(button);
+    return item;
 }
