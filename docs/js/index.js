@@ -73,7 +73,7 @@ const genTitleHeader = (title) => {
     document.write(header.outerHTML);
 }
 
-const linkLineOfficialAccount = (element, href = "https://lin.ee/9FDmO82") => {
+const linkLineOfficialAccount = (href = "https://lin.ee/9FDmO82") => {
     const a = document.createElement('a');
     a.classList.add("uk-button", "uk-border-rounded", "line-login-button");
     a.href = href;
@@ -84,5 +84,5 @@ const linkLineOfficialAccount = (element, href = "https://lin.ee/9FDmO82") => {
     label.innerHTML = "Official Account";
     a.appendChild(logo);
     a.appendChild(label);
-    element.appendChild(a);
+    document.write(a.outerHTML);
 }
