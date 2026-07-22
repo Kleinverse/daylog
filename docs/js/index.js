@@ -59,7 +59,7 @@ const genNavbarIconButton = (icon, href) => {
 }
 
 const linkLineOfficialAccount = (element, href = "https://lin.ee/9FDmO82") => {
-    document.createElement('a');
+    const a = document.createElement('a');
     a.classList.add("uk-button", "uk-border-rounded", "line-login-button");
     a.href = href;
     const logo = document.createElement('img');
