@@ -1,0 +1,40 @@
+/** default for daylog */
+
+
+.line-login-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #06C755;
+    color: #FFFFFF;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    border: 1px solid #06C755;
+    cursor: pointer;
+}
+
+.line-login-button:hover {
+    background-color: #05b34d;
+}
+
+.line-login-button:active {
+    background-color: #049f44;
+}
+
+/* Icon placement */
+.line-login-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.line-login-icon-img-standalone {
+    background: #06C755;
+    border-radius: 20%;
+}
