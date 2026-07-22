@@ -1,7 +1,7 @@
 const genNavbar = (subtitle = null) => {
     const title = subtitle ? `<span>daylog</span>::<span class="uk-text-muted">${subtitle}</span>` : "daylog";
     const nav = document.createElement('nav');
-    nav.classList.add("uk-navbar-container", "uk-margin");
+    nav.classList.add("uk-navbar-container");
     const container = document.createElement('div');
     container.classList.add("uk-container", "uk-container-expand");
     nav.appendChild(container);
