@@ -70,14 +70,14 @@ const genNavbarIconButton = (icon, href) => {
 
 const genTitleHeader = (title) => {
     const header = document.createElement('div');
-    header.classList.add("uk-h2", "uk-flex", "uk-flex-middle", "uk-text-bold", "uk-text-muted");
+    header.classList.add("uk-heading-medium", "uk-text-bold", "uk-text-muted");
     const logo = document.createElement('img');
-    logo.style.width = "60px"; 
-    logo.style.height = "60px";
+    logo.style.width = "96px"; 
+    logo.style.height = "96px";
     logo.classList.add("uk-margin-right");
     logo.src = `https://${location.hostname}/images/daylog-icon-96.png`;
     header.appendChild(logo);
-    const label = document.createElement('span');
+    const label = document.createElement('p');
     label.innerHTML = title;
     header.appendChild(label);
     document.write(header.outerHTML);
