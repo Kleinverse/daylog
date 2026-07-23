@@ -106,7 +106,7 @@ const identifyLanguage = () => {
 
 identifyLanguage();
 
-window.onload(() => {
+document.addEventListener('DOMContentLoaded', () => {
     const register = document.getElementById("_register");
     if(register){
         register.addEventListener('click', () => {
