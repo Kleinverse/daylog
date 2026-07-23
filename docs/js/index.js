@@ -72,10 +72,10 @@ const genTitleHeader = (title) => {
     const header = document.createElement('div');
     header.classList.add("uk-h1", "uk-text-bold", "uk-text-muted", "uk-text-center");
     const logo = document.createElement('img');
-    logo.style.width = "96px"; 
-    logo.style.height = "96px";
+    logo.style.width = "192px"; 
+    logo.style.height = "192px";
     logo.classList.add("uk-margin-right");
-    logo.src = `https://${location.hostname}/images/daylog-icon-96.png`;
+    logo.src = `https://${location.hostname}/images/daylog-icon-192.png`;
     header.appendChild(logo);
     const label = document.createElement('p');
     label.innerHTML = title;
