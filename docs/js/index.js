@@ -29,8 +29,8 @@ const genNavbarLogo = (title, href) => {
     const img = document.createElement('img');
     img.classList.add("uk-margin-small-right");
     img.src = `https://${location.hostname}/images/daylog-icon-96.png`;
-    img.style.width = "60px";
-    img.style.height = "60px";
+    img.style.width = "40px";
+    img.style.height = "40px";
     const a = document.createElement('a');
     a.classList.add("uk-navbar-item", "uk-logo", "uk-text-bold");
     a.href = href;
