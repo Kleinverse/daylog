@@ -110,7 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const register = document.getElementById("_register");
     if(register){
         register.addEventListener('click', () => {
-            console.log('clicked');
             const resuUrl = document.getElementById("_restUrl");
             const agree = document.getElementById("_agree");
             if(restUrl.value.trim() == "") restUrl.classList.add("uk-form-danger");
