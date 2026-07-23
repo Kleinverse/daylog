@@ -114,8 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const agree = document.getElementById("_agree");
             if(restUrl.value.trim() == "") restUrl.classList.add("uk-form-danger");
             else restUrl.classList.remove("uk-form-danger");
-            if(!agree.checked) agree.parentElement.classList.add("uk-form-danger");
-            else agree.parentElement.classList.remove("uk-form-danger");
+            if(!agree.checked) agree.classList.add("uk-form-danger");
+            else agree.classList.remove("uk-form-danger");
         });
     }
 });
