@@ -105,3 +105,15 @@ const identifyLanguage = () => {
 }
 
 identifyLanguage();
+
+const register = document.getElementById("_register");
+if(register){
+    register.addEventListener('click', () => {
+        const resuUrl = document.getElementById("_restUrl");
+        const agree = document.getElementById("_agree");
+        if(restUrl.value.trim() == "") restUrl.classList.add("uk-form-danger");
+        else restUrl.classList.remove("uk-form-danger");
+        if(!agree.checked) agree.parentElement.classList.add("uk-form-danger");
+        else agree.parentElement.classList.remove("uk-form-danger");
+    })
+}
