@@ -70,7 +70,7 @@ const genNavbarIconButton = (icon, href) => {
 
 const genTitleHeader = (title) => {
     const header = document.createElement('div');
-    header.classList.add("uk-heading-medium", "uk-text-bold", "uk-text-muted");
+    header.classList.add("uk-heading-small", "uk-text-bold", "uk-text-muted", "uk-text-center");
     const logo = document.createElement('img');
     logo.style.width = "96px"; 
     logo.style.height = "96px";
