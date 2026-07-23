@@ -26,10 +26,19 @@ const genNavbarPart = (position) => {
 }
 
 const genNavbarLogo = (title, href) => {
-    const logo = document.createElement('a');
-    logo.classList.add("uk-navbar-item", "uk-logo", "uk-text-bold");
-    logo.href = href;
-    logo.innerHTML = title;
+    const img = document.createElement('img');
+    img.classList.add("uk-margin-small-right");
+    img.src = `https://${location.hostname}/images/daylog-icon-96.png`;
+    img.style.width = "60px";
+    img.style.height = "60px";
+    const a = document.createElement('a');
+    a.classList.add("uk-navbar-item", "uk-logo", "uk-text-bold");
+    a.href = href;
+    a.innerHTML = title;
+    const logo = document.createElement('div');
+    logo.classList.add("uk-flex", "uk-flex-middle");
+    logo.appendChild(img);
+    logo.appendChild(a);
     return logo;
 }
 
