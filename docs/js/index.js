@@ -87,3 +87,12 @@ const linkLineOfficialAccount = (href = "https://lin.ee/9FDmO82") => {
     a.appendChild(label);
     document.write(a.outerHTML);
 }
+
+const identifyLanguage = () => {
+    const preferred = navigator.language || navigator.userLanguage;
+    var lang = preferred.split('-')[0];
+    lang = lang == 'ja' ?? 'en';
+    document.documentElement.setAttribute("lang", lang);
+}
+
+identifyLanguage();
